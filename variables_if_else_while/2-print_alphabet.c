@@ -6,8 +6,6 @@
 /* return: always (success) */
 int main(void)
 {
-	int n;
-
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
