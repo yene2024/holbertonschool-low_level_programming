@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-*main - Print the alphabetic a-z
+*main - Print all combination of single digit number
 *Return: Always 0 (Success)
  */
 
@@ -13,8 +13,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-	    putchar('0' + i);
-
+		putchar('0' + i);
 		if (i < 9)
 		{
 			putchar(',');
