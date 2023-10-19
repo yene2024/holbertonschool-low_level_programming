@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_numbers - prints the numbers
-*/
-
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
     print_numbers();
