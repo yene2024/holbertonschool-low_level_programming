@@ -3,7 +3,6 @@
 /**
  * print_line - function that draws
  *@n: The number of lines to draw
- * Return: empty
  */
 
 int main(void)

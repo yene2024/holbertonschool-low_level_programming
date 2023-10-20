@@ -1,24 +1,17 @@
 #include "main.h"
 
 /**
- * print_line - function that draws
+ *print_line - function that draws
  *@n: The number of lines to draw
- * Return: empty
  */
 void print_line(int n)
 {
-	int x;
+	int i;
 
-	if (n <= 0)
+	for (i = 0; i < n; i++)
 	{
-	_putchar('\n');
+	_putchar('_');
 	}
-	else
-	{
-	for (x = 0; x < n; x++)
-	{
-	_putchar(95);
-	}
-	}
+	_putchar('n');
 }
 
