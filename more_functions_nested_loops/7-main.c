@@ -2,8 +2,9 @@
 
 /**
  *print_diagonal - function that draws
- *@n: the number of times the character
+ *@n: integer to print
  */
+
 int main(void)
 {
     print_diagonal(0);
