@@ -3,6 +3,7 @@
 
 /**
  * rev_string - function that reverse a string
+ *@s:string in reverse
  */
 int main(void)
 {
