@@ -3,30 +3,24 @@
 
 /**
  * *_strncpy - copy a string from src to dest with a length limit
- * @src: not need to be null
+ * @src: input value
  * @dest:coppies a string
- * @n:function should work exactly like strncpy
+ * @n: input value
  * Return: pointer to the resulting string dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *first_dest = dest;
+	int i = 0;
 
-	while (*src != '\0' && n > 0)
+	while (i < n && src[i] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
-		n--;
+		dest[i] = src[i];
+		i++;
 	}
-	while (n > 0)
+	while (i < n)
 	{
-		*dest = '\0';
-		dest++;
-		n--;
+		dest[i] = '\0';
+		i++;
 	}
-	*dest = '\0';
-
-	return (first_dest);
+	return (dest);
 }
-

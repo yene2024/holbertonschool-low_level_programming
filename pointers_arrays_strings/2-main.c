@@ -4,8 +4,8 @@
 /**
  * *_strncpy - copy a string from src to dest with a length limit
  * @src: not need to be null
+ * @n: input value
  * @dest:coppies a string
- * @n:function should work exactly like strncpy
  * return:pointer to the resulting string dest
  */
 
