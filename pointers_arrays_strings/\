@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
-* *cap_string - Capitalizes all words in a string.
-* @s: string to be capitalized
-* @return: string
-*/
-
+	 * *cap_string - Capitalizes all words in a string.
+	 * @str: The input string.
+	 * @return: A new string with all words capitalized.
+	 */
 
 int main(void)
 {
