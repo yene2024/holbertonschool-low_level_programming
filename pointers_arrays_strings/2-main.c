@@ -2,18 +2,43 @@
 #include <stdio.h>
 
 /**
- * _strlen - function that returns the length of a string.
- *@s:length of a string
- * Return: return the length of a string.
+ * *_strncpy - copy a string from src to dest with a length limit
+ * @src: not need to be null
+ * @dest:coppies a string
+ * @n:function should work exactly like strncpy
+ * return:pointer to the resulting string dest
  */
 
 int main(void)
 {
-    char *str;
-    int len;
+    char s1[98];
+    char *ptr;
+    int i;
 
-    str = "My first strlen!";
-    len = _strlen(str);
-    printf("%d\n", len);
+    for (i = 0; i < 98 - 1; i++)
+    {
+        s1[i] = '*';
+    }
+    s1[i] = '\0';
+    printf("%s\n", s1);
+    ptr = _strncpy(s1, "First, solve the problem. Then, write the code\n", 5);
+    printf("%s\n", s1);
+    printf("%s\n", ptr);
+    ptr = _strncpy(s1, "First, solve the problem. Then, write the code\n", 90);
+    printf("%s", s1);
+    printf("%s", ptr);
+    for (i = 0; i < 98; i++)
+    {
+        if (i % 10)
+        {
+            printf(" ");
+        }
+        if (!(i % 10) && i)
+        {
+            printf("\n");
+        }
+        printf("0x%02x", s1[i]);
+    }
+    printf("\n");
     return (0);
 }
