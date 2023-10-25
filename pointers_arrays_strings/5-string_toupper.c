@@ -8,13 +8,17 @@
  * Return: str
  */
 
-int main(void)
+char *string_toupper(char *str)
 {
-    char str[] = "Look up!\n";
-    char *ptr;
+	int i = 0;
 
-    ptr = string_toupper(str);
-    printf("%s", ptr);
-    printf("%s", str);
-    return (0);
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+		str[i] = str[i] - 'a' + 'A';
+		}
+		i++;
+	}
+	return (str);
 }
