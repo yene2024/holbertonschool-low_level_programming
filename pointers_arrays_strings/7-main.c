@@ -1,15 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * puts_half - function that prints half of a string
- *
- * @str:half of a string
- */
+* leet - encode a string into 1337
+* @s: string to be encoded
+*Return: the resulting string;
+*/
+
 int main(void)
 {
-    char *str;
+    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+    char *p;
 
-    str = "0123456789";
-    puts_half(str);
+    p = leet(s);
+    printf("%s", p);
+    printf("%s", s);
     return (0);
 }
