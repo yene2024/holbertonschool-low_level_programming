@@ -2,40 +2,19 @@
 #include <stdio.h>
 
 /**
- * reverse_array - function that reverse the content
- * @a: an array of integers
- * @n: the number of elements to array
- * Return: Always 0.
+ * _strpbrk - Search a string for any set of bytes.
+ * @s: input
+ * @accept: input
+ * Return: A pointer to the byte in 's' that matches
  */
 
-void print_array(int *a, int n)
-{
-    int i;
-
-    i = 0;
-    while (i < n)
-    {
-        if (i != 0)
-        {
-            printf(", ");
-        }
-        printf("%d", a[i]);
-        i++;
-    }
-    printf("\n");
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
 int main(void)
 {
-    int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
 
-    print_array(a, sizeof(a) / sizeof(int));
-    reverse_array(a, sizeof(a) / sizeof(int));
-    print_array(a, sizeof(a) / sizeof(int));
+    t = _strpbrk(s, f);
+    printf("%s\n", t);
     return (0);
 }
