@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strstr - Locate a substring in a string.
+ * *_strstr - Locate a substring in a string.
  * @haystack: function that provides a standar library.
  * @needle: input
+ * Return: a pointer to begining of the first occurrence
  **/
 char *_strstr(char *haystack, char *needle)
 {
