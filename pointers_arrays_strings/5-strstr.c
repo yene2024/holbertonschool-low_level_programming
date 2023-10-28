@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strstr - unction finds the first occurrence of the substring
+ * _strstr - Locate a substring in a string.
  * @haystack: function that provides a standar library.
  * @needle: input
  **/

@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strstr - function finds the first occurrence of the substring
  *
  * Return: Always 0.
  */
