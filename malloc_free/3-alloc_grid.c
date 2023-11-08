@@ -4,8 +4,8 @@
 
 /**
  * alloc_grid - function that return a pointers
- * width: function for invalid input
- * height:function for invalid input
+ * @width: width of the grid
+ * @height: height of the grid
  *
  * Return:function that return NULL
  **/
