@@ -5,6 +5,7 @@
 /**
  * *_strdup - function that duplicate a string
  * @str: the string to duplicated
+ * Return: NULL if str = NULL
  **/
 
 char *_strdup(char *str)
