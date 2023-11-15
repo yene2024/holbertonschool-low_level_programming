@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * print_dog - initializes a dog structure
+ * print_dog - dog structure
  * @d: a dog structure
  * @name: the name of the dog
  * @age: the age of the dog
